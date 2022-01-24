@@ -223,15 +223,6 @@ span {
     max-width: 230px;
   }
 
-  @media screen and (max-width:200px) {
-    .banner_content2 h1 {
-      z-index: 1;
-      display: grid;
-      position: relative;
-      font-size: 30px;
-      margin: 5px auto;
-      max-width: 130px;
-    }
 
   .span_title {
     font-size: 40px;
