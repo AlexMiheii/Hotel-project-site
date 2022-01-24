@@ -239,10 +239,14 @@ span {
     position: relative;
     margin-right: 50px;
   }
+
   .banner_content2 h1 {
     position: absolute;
     left: 30px;
+      }
 
+  .logo a {
+    font-size: 35px;
   }
 }
 
