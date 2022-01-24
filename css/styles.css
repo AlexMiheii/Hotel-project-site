@@ -222,9 +222,22 @@ span {
     max-width: 230px;
   }
 
-
   .message {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .banner_content2 h1 {
+    position: relative;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:422px) {
+  .banner_content2 h1 {
+    position: relative;
+    margin-right: 50px;
   }
 }
 
