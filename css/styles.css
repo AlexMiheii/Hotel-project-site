@@ -235,9 +235,14 @@ span {
 }
 
 @media screen and (max-width:422px) {
-  .banner_content2 h1 {
+  .banner_content2 {
     position: relative;
     margin-right: 50px;
+  }
+  .banner_content2 h1 {
+    position: absolute;
+    left: 30px;
+
   }
 }
 
