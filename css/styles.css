@@ -44,6 +44,7 @@ span {
   justify-content: space-around;
   align-items: center;
   background-color: #161853;
+  padding-left: 30px;
 }
 
 .logo a {
@@ -52,12 +53,17 @@ span {
   line-height: 1.5;
   color: #AEFEFF;
   position: relative;
-  right: 240px;
+  right: 55px;
   top: 5px;
+  max-width: 100%;
 }
 
 .navbar .navbar_items ul {
   display: flex;
+}
+
+.navbar_items {
+  padding-left: 700px;
 }
 
 .navbar .navbar_items ul li {
@@ -69,10 +75,141 @@ span {
   color: #FFF8F3;
 }
 
-@media screen and (max-width: 720px) {
+.navbar_items ul li a:hover {
+  color: #AEFEFF;
+}
+
+@media all and (max-width:1615px) {
+  .logo {
+  position: absolute;
+  left: 30px;
+  }
+  .banner_content2 h1 {
+  font-size: 20px;
+  }
+}
+
+@media all and (max-width:1266px) {
+  .banner_content2 {
+  display: flex;
+  flex: 100%;
+  }
+  .banner_content2 h2 {
+  position: absolute;
+  right: 900px;
+  }
+}
+
+@media all and (max-width:1199px) {
   .navbar {
     height: auto;
     flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navbar_items {
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    right:340px;
+    padding: 5px 0 5px 0;
+  }
+
+  .navbar ul li {
+    margin-bottom: 5px;
+    padding-bottom: 7px;
+  }
+
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .logo a {
+    position: relative;
+    left: 20px;
+  }
+}
+
+@media all and (max-width:1199px) {
+
+  .banner_content2 {
+    position: relative;
+    right: 190px;
+  }
+
+  .banner_content2 h1 {
+    font-size: 20%;
+  }
+
+  .banner_content {
+    position: relative;
+    right: 300px;
+  }
+}
+
+@media all and (max-width:951px) {
+  .banner_content2 {
+    right: 290px;
+  }
+  .banner_content {
+    right: 300px;
+  }
+}
+
+@media all and (max-width:888px) {
+  .logo {
+    position: relative;
+    right: 300px;
+    top: 10px;
+    padding-right: 80px;
+
+  }
+
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .banner_content2 {
+    display: inline-block;
+    position: absolute;
+    top: 140px;
+    max-width: 50%;
+    margin-right: 500px;
+  }
+
+  .banner_content2 h1 {
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  .banner_content {
+    position: absolute;
+    display: inline-block;
+    top:180px;
+    right:500px;
+  }
+
+  .message{
+    display: block;
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navbar_items {
+    text-align: center;
   }
 
   .navbar ul {
@@ -95,6 +232,23 @@ span {
   }
 }
 
+@media all and (max-width: 720px) {
+  .banner_content2 {
+  left: 50px;
+  width: 100%;
+  }
+
+.banner_content {
+  position: relative;
+  top: 10px;
+  right: 500px;
+}
+
+  .message {
+    margin-right: auto;
+  }
+}
+
 /* Banner Image */
 .banner_image {
   width: 100%;
@@ -109,20 +263,21 @@ span {
 
 .banner_content {
   color: #EEF2FF;
-  display: grid;
   text-align: center;
+
 }
+
 
 .banner_content2 h1 {
   color: #EEF2FF;
   display: flex;
+  justify-content: center;
   text-transform: uppercase;
   position: relative;
-  top: -70px;
+  top: -133px;
   left: 500px;
   font-size: 70px;
   line-height: 1.3;
-  max-width: 700px;
   font-family: "Merriweather";
   letter-spacing: 1.5px;
   text-shadow: 10px 10px 40px;
@@ -133,12 +288,14 @@ span {
   border-radius: 20px;
 }
 
-
 .message {
+  border-radius: 30%;
   color: white;
   text-align: center;
   position: relative;
+  font-size: 35px;
   left: 500px;
+  top:100px;
   font-family: "Merriweather";
   letter-spacing: 1.7px;
   text-shadow: 10px 10px 40px;
@@ -196,19 +353,25 @@ span {
   }
 }
 
-@media screen and (max-width:1124px) {
+/* Media Query banner and navbar */
+
+@media screen and (max-width:1669px) {
   .banner_content2 h1 {
     z-index: 1;
     position: relative;
-    top:10px;
-    left: 10px;
   }
-  .banner_content {
-    position: relative;
+
+  .logo a{
+    padding-left: 50px;
+    font-size: 45px;
   }
-  .message {
-    position: absolute;
-    left:50px;
+}
+
+@media screen and (max-width:1673px) {
+  .logo a {
+    padding-left:50px;
+    font-size: 40px;
+
   }
 }
 
@@ -227,17 +390,20 @@ span {
   }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:510px) {
+  .navbar {
+    justify-content: center;
+  }
   .banner_content2 h1 {
     position: relative;
-    margin-left: 50px;
+    left: 90px;
   }
 }
 
 @media screen and (max-width:422px) {
   .banner_content2 {
     position: relative;
-    margin-right: 50px;
+    left: 100px;
   }
 
   .banner_content2 h1 {
@@ -314,6 +480,7 @@ span {
   background: #f1f1f1;
   color: #434343;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .inner {
